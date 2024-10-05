@@ -1,0 +1,31 @@
+
+1. Minimum Required Win Rate (WR) for a given Risk-Reward Ratio (RR):
+   Formula: WR = 1 / (1 + RR)
+   Explanation: This formula calculates the win rate needed to break even, given a risk-reward ratio (RR).
+   Example: If the RR is 2, the required win rate is WR = 1 / (1 + 2) = 0.33 or 33%.
+
+2. Risk-Reward Ratio (RR) for a given Win Rate (WR):
+   Formula: RR = (1 / WR) - 1
+   Explanation: This formula calculates the required risk-reward ratio to break even, given a win rate.
+   Example: If the win rate is 50%, the RR is RR = (1 / 0.5) - 1 = 1.
+3. Expected Profitability (EP) or Expectancy:
+   Formula: EP = (WR * Average Win) - (LR * Average Loss)
+   Where:
+   - WR = Win Rate
+   - LR = Loss Rate (1 - WR)
+   Explanation: This formula calculates the expected profitability per trade.
+   Example: If the win rate is 40%, average win is $100, average loss is $50, the EP is: 
+   EP = (0.4 * 100) - (0.6 * 50) = 40 - 30 = $10.
+
+6. Risk of Ruin (RoR):
+   Approximate Formula (simplified for fixed bet sizes): 
+   RoR = [(1 - WR) / (1 + WR)] ^ Number of Trades
+   Explanation: This formula estimates the probability of losing the entire capital after a certain number of trades.
+   Example: If WR is 60% and you make 100 trades, RoR ≈ [(1 - 0.6) / (1 + 0.6)] ^ 100.
+
+---------------
+7. Maximum Drawdown (MDD):
+   Formula: MDD = (Peak Value - Trough Value) / Peak Value
+   Explanation: This formula calculates the maximum observed loss from a peak to a trough during a specific period.
+   Example: If the portfolio value dropped from $10,000 to $7,000, MDD = (10000 - 7000) / 10000 = 30%.
+
