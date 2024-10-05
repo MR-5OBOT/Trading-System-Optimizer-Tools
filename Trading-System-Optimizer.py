@@ -168,29 +168,48 @@ def expercted_Profitability():
 
 #--------------------------------------------------------------------------------
 
-print("List of a basic trading tool to help improving you Trading System:")
-print("""
-1. BreakEven_RR_Required
-2. BreakEven_WinRate_Required
-3. Max DrawDown Calculator
-4. Risk of Ruin probability ROR
-5. Expected Profitability EP
-""")
+def tools_list():
+    print("List of a basic trading tool to help improving you Trading System:")
+    print("""
+    1. BreakEven_RR_Required
+    2. BreakEven_WinRate_Required
+    3. Max DrawDown Calculator
+    4. Risk of Ruin probability ROR
+    5. Expected Profitability EP
+    """)
+tools_list()
 
-user_input = int(input("Choose your tool by typing its number: "))
-
-if user_input == 1:
-    rr_required()
-elif user_input == 2:
-    winRate_required()
-elif user_input == 3:
-    maximumDD()
-elif user_input == 4:
-    risk_of_ruin()
-elif user_input == 5:
-    expercted_Profitability()
-else:
-    sys.exit()
+def choosing_items():
     
+    user_input = int(input("Choose your tool by typing its number: "))
+    if user_input == 1:
+        rr_required()
+    elif user_input == 2:
+        winRate_required()
+    elif user_input == 3:
+        maximumDD()
+    elif user_input == 4:
+        risk_of_ruin()
+    elif user_input == 5:
+        expercted_Profitability()
+    else:
+        sys.exit()
+    
+# End .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
