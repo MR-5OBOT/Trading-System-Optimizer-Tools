@@ -28,6 +28,6 @@ RoR = [(1 - WR) / (1 + WR)] ^ Number of Trades
 5. Expected Profitability EP
 > Explanation: This formula calculates the expected profitability per trade.
 ```
-#    Formula: EP = (WR * Average Win) - (LR * Average Loss)
+Formula: EP = (WR * Average Win) - (LR * Average Loss)
 ```
 
