@@ -125,7 +125,6 @@ def risk_of_ruin():
 
 
 #--------------------------------------------------------------------------------
-
 # Expected Profitability (EP) or Expectancy:
 #    Formula: EP = (WR * Average Win) - (LR * Average Loss)
 #    Where:
@@ -148,8 +147,8 @@ def expercted_Profitability():
     try:
         # Try converting input string to int
         winrate = int(winrate)
-        averege_loss = int(averege_loss)
-        averege_win = int(averege_win)
+        averege_loss = float(averege_loss)
+        averege_win = float(averege_win)
     except ValueError:
         print("Invalid Entry Please type a valid Value!")
         sys.exit()
@@ -177,10 +176,10 @@ def tools_list():
     4. Risk of Ruin probability ROR
     5. Expected Profitability EP
     """)
+
 tools_list()
 
 def choosing_items():
-    
     user_input = int(input("Choose your tool by typing its number: "))
     if user_input == 1:
         rr_required()
@@ -194,6 +193,8 @@ def choosing_items():
         expercted_Profitability()
     else:
         sys.exit()
+
+choosing_items()
     
 # End .
 
